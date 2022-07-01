@@ -18,10 +18,8 @@ function getColor(e) {
       output.innerHTML += `
     <div class=" flex" >
     <img src="${data.image.bare}" alt="color" class="img" > 
-    <br>
     ${data.seed.hex.value}
     </div>
-    <br/>
     `    })
 
   e.preventDefault()

@@ -33,12 +33,20 @@ height: 50px;
 .color-btn{
   width: 30%;
   height: 50px;
-  border-radius: 3px;
+  border-radius: 5px;
   border: 1px solid #ccc;
+  background: #222;
+  color: #ccc;
+  cursor: pointer;
+}
+.color-btn:hover{
+  background: #ccc;
+  color: #222;
 }
 .output{
   display: flex;
   flex-wrap: wrap;
+  row-gap: 1.5rem;
 }
 .flex{
   display: flex;
