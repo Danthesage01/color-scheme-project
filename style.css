@@ -1,36 +1,52 @@
-body{
+body {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-.container{
-  width: 800px;
+.container {
+  width: 90vw;
   margin: 0 auto;
   background: #fff;
+  max-width: 1170px;
 }
-.color-design{
-margin-top: 3em;
-padding-top: 1em;
-padding-bottom: 1em;
-width: 90%;
-height: 50px;
+
+.color-design {
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 90%;
+  height: 50px;
 }
-.form{
+@media screen and (min-width: 992px) {
+  .container {
+    width: 800px;
+    max-width: 800px;
+  }
+  .color-design {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: 50px;
+  }
+}
+.form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0;
 }
 
-.color-inp{
- width: 15%;
- height: 50px;
- margin-left: 5px;
+.color-inp {
+  width: 15%;
+  height: 50px;
+  margin-left: 5px;
 }
-.color-sel{
+.color-sel {
   width: 50%;
   height: 50px;
   border-radius: 5px;
 }
-.color-btn{
+.color-btn {
   width: 30%;
   height: 50px;
   border-radius: 5px;
@@ -40,16 +56,16 @@ height: 50px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.color-btn:hover{
+.color-btn:hover {
   background: #ccc;
   color: #222;
 }
-.output{
+.output {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 1.5rem;
+  row-gap: 1rem;
 }
-.flex{
+.flex {
   display: flex;
   flex-direction: column;
 }
